@@ -5,8 +5,26 @@ Chip IDE is being developed to realise the full multi target capabilities of the
 Chip loads Dwarf debug info for each target to provide debug functionality normally provided by gdb.
 Hence Chip connectects directly to multiple dbu's and multiple CPU's without the overhead of running gdb tools in separate processes.
 
-
-![Chip](https://github.com/brucebiotech/chip/blob/main/docs/chip_ide.png)
+```mermaid
+graph LR;
+ ide["Chip IDE"]
+ dbu1["dbu"]
+ dbu2["dbu"]
+ CPU1
+  c1["Core 1"]
+  c2["Core 2"]
+ CPU2
+ CPU3
+ CPU4
+ ide --> dbu1
+ dbu1 --> CPU1
+ CPU1 --> c1
+ CPU1 --> c2
+ dbu1 --> CPU2
+ ide --> dbu2
+ dbu2 --> CPU3
+ dbu2 --> CPU4
+```
 
  ## Conventional IDE's
 
