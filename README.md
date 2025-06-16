@@ -10,20 +10,20 @@ graph LR;
  ide["Chip IDE"]
  dbu1["dbu"]
  dbu2["dbu"]
- CPU1
-  c1["Core 1"]
-  c2["Core 2"]
+
+  c1["CPU1 Core 1"]
+  c2["CPU1 Core 2"]
  CPU2
  CPU3
  CPU4
- ide --> dbu1
- dbu1 --> CPU1
- CPU1 --> c1
- CPU1 --> c2
- dbu1 --> CPU2
- ide --> dbu2
- dbu2 --> CPU3
- dbu2 --> CPU4
+ ide <--> dbu1
+
+ dbu1 <--> c1
+ dbu1 <--> c2
+ dbu1 <--> CPU2
+ ide <--> dbu2
+ dbu2 <--> CPU3
+ dbu2 <--> CPU4
 ```
 
  ## Conventional IDE's
