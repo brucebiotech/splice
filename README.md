@@ -1,9 +1,15 @@
 
-## Chip Integrated Development Environment
+## Chip Integrating Development Environment
 
 Chip IDE is being developed to realise the full multi target capabilities of the [dbu](https://github.com/brucebiotech/dbu) debug adapter.
-Chip loads Dwarf debug info for each target to provide debug functionality normally provided by gdb.
-Hence Chip connectects directly to multiple dbu's and multiple CPU's without the overhead of running gdb tools in separate processes.
+
+Chip provides a multi-device programming and debug environment where binaries are built with existing cmdline build tools such as west and platform-io.
+
+Chip directly connects to all target devices in a set avoiding the overhead of gdb-servers with individual connections to single-device debug adatpers.
+
+This is achieved by incorporating functionality normally provided by gdb and gdb-servers such as openOCD.  To do this Chip loads Dwarf debug info for each target and implements its own multi-cmsis-dap protocol client.
+
+This delivers improved performance and provides a seamless debug experience across all devices in a project.
 
 ```mermaid
 graph LR;
