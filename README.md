@@ -2,6 +2,7 @@
 ## Splice Integrating Development Environment
 
 Splice IDE is being developed to realise the full multi target capabilities of the [dbu](https://github.com/brucebiotech/dbu) debug adapter.
+The initial target board (in development is the [fizzit pulsar](https://github.com/brucebiotech/splice/blob/main/docs/README.md).
 
 Splice provides a multi-device programming and debug environment where binaries are built with existing cmdline build tools such as west and platform-io.
 
