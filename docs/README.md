@@ -1,6 +1,6 @@
 # Pulsar
 
-The Pulsar is an Adafruit feather compatible baseboard built with a multi-debug dbu onboard:
+The Pulsar (in development) is an Adafruit feather compatible baseboard built with a multi-debug dbu onboard:
 ```
       .--------------------------------------------------------------------.
       | fizzit-pulsar                                                      |
